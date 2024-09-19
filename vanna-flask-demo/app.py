@@ -18,13 +18,10 @@ cache = MemoryCache()
 
 from vanna.remote import VannaDefault
 
-VANNA_API_KEY = "0c1490face174ff4b89d5cab8e38929e"
-# 0c1490face174ff4b89d5cab8e38929e    d5db13cb51474f0d8a64b4dea1ec9570
+VANNA_API_KEY = ""
 MY_VANNA_MODEL = "mall-model"
-# mall-model mysql-openai-mall
-
 vn = VannaDefault(api_key=VANNA_API_KEY, model=MY_VANNA_MODEL)
-vn.connect_to_mysql(host='127.0.0.1', dbname='mall', user='root', password='root123', port=3306)
+vn.connect_to_mysql(host='', dbname='', user='', password='', port=)
 
 # NO NEED TO CHANGE ANYTHING BELOW THIS LINE
 def requires_cache(fields):
